@@ -1,0 +1,166 @@
+/* Full Geocities / Tripod kitsch */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000080 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><text y="30" font-size="30" fill="%23ffff00">★</text></svg>') repeat;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  color: #000;
+  line-height: 1.4;
+}
+
+.top-banner {
+  background: #ff00ff;
+  color: #ffff00;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 4px 0;
+  text-align: center;
+}
+
+.kitsch-header {
+  background: linear-gradient(#ff00ff, #00ffff);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 5px ridge #ffff00;
+}
+
+.kitsch-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #ff0000;
+  text-shadow: 3px 3px #ffff00, -1px -1px #00ff00;
+  font-family: Impact, "Arial Black", sans-serif;
+  letter-spacing: 2px;
+}
+
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.4; }
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #000080;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.visitor {
+  background: #ffff00;
+  display: inline-block;
+  padding: 4px 12px;
+  border: 3px double #000;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.counter {
+  color: #ff0000;
+  font-family: "Courier New", monospace;
+}
+
+.kitsch-nav {
+  background: #00ff00;
+  text-align: center;
+  padding: 0.8rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-bottom: 4px solid #ff00ff;
+}
+
+.kitsch-nav a {
+  color: #000080;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.kitsch-nav a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.kitsch-section {
+  margin: 1rem;
+  padding: 1rem;
+  background: #ffffcc;
+  border: 4px ridge #ff00ff;
+}
+
+.kitsch-section.alt {
+  background: #ccffff;
+  border-color: #00ff00;
+}
+
+.kitsch-section h2 {
+  font-family: Impact, sans-serif;
+  color: #ff00ff;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  text-shadow: 2px 2px #ffff00;
+}
+
+.rainbow {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+.gif-box {
+  background: #ffccff;
+  border: 3px dashed #ff00ff;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #800080;
+  text-align: center;
+}
+
+.kitsch-footer {
+  background: #000080;
+  color: #ffff00;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 6px double #ff00ff;
+}
+
+.kitsch-footer a {
+  color: #00ffff;
+  margin: 0 0.5rem;
+}
+
+.kitsch-footer marquee {
+  background: #ff00ff;
+  color: #ffff00;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  padding: 4px;
+}
+
+/* Make it responsive-ish */
+@media (max-width: 700px) {
+  table, tr, td {
+    display: block;
+    width: 100% !important;
+  }
+  .kitsch-header h1 {
+    font-size: 2rem;
+  }
+}
